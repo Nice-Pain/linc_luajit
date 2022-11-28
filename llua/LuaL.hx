@@ -61,7 +61,7 @@ extern class LuaL {
     static function where(l:State, lvl:Int) : Void;
 
     @:native('luaL_error')
-    static function error(l:State, fmt:String, ...) : Int;
+    static function error(l:State, fmt:String) : Int;
 
     @:native('luaL_checkoption')
     static function checkoption(l:State, narg:Int, def:String, const:Array<String>) : Int;
